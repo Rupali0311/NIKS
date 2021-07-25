@@ -1,0 +1,162 @@
+*{
+    font-family:sans-sarif;
+}
+
+/* .container-fluid{
+    
+} */
+
+
+.wrapper{
+    display:flex;
+   flex-direction: column;
+   height: auto;
+    background-color: #301934;
+    overflow: hidden;
+}
+
+.content{
+    position:absolute;
+    z-index:100;
+    margin-top:35%;
+    margin-left:5%;
+    margin-right:5%;
+    margin-bottom :30%;
+    width:90%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+     background-color: #fff;
+    font-size:1.3em;
+     /* background-image: radial-gradient(farthest-corner at left,#471c86 20%,#fff); */
+   /* color:#fff;  */
+   /* overflow: hidden; */
+   color:#471c86;
+}
+
+.content:before{
+    position: absolute;
+    content:'';
+    top:0;
+    left:0;
+    height:70vh;
+    width:100%;
+    -webkit-clip-path: circle(46.6% at 1% 1%);
+clip-path: circle(46.6% at 1% 1%);
+background-color:#471c86;
+border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+
+.content:after{
+    position: absolute;
+    content:'';
+    top:40%;
+    left:0;
+    
+    height:90vh;
+    width:100%;
+    -webkit-clip-path: circle(38.0% at 98% 98%);
+clip-path: circle(38.0% at 98% 98%);
+background-color:#471c86;
+border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index:-1;
+}
+
+
+.wrap{
+    background-image: url('/img/hospital.jpg');
+   
+    background-blend-mode:darken;
+    background-size: cover;
+    height:85vh;
+    width:100%;
+    overflow:hidden;
+    filter: brightness(20%);
+    z-index:1;
+    
+}
+
+.info{
+    position:absolute;
+    z-index:30;
+    padding-left:5%;
+    padding-right:5%;
+}
+
+.info h1{
+    position:relative;
+    margin-top:15%;
+    color:#ffffff;
+    text-shadow:4px 4px 5px rgba(156, 160, 201,1.0);
+    font-size:2.9em;
+    z-index:9;
+}
+
+.info p,span{
+    
+    
+    color:#ffffff;
+    text-shadow:2px 2px 5px rgba(156, 160, 201,1.0);
+    font-size: 1.3em;
+    z-index:9;
+    
+}
+
+
+img{
+    width:400px;
+    height:400px;
+    background-size: cover;
+}
+
+
+
+.cards{
+    position:absolute;
+    width:80%;
+    height:110vh;
+    box-shadow:inset 5px 5px 5px rgba(0,0,0,0.05),
+               inset -5px -5px 5px rgba(255,255,255,0.5),
+               5px 5px 5px rgba(0,0,0,0.5),
+               -5px -5px 5px rgba(255,255,255,0.5);
+    border-radius: 15px;
+    margin:30px 0;
+    margin-left:10px;
+    background-color: linear-gradient(#ebf5fc,#fff);
+}
+
+.box{
+    position:absolute;
+    top:20px;
+    left:20px;
+    right:20px;
+    bottom:20px;
+    /* background: #ebf5fc; */
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    border-radius:15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition:0.5%;
+    background-color: #fff;
+    background-image: linear-gradient(to left,rgb(156, 160, 201),#fff);
+}
+
+.box-content{
+    padding:5%;
+    
+}
+
+.box:hover{
+    transform:translateY(-50px);
+    box-shadow:0 10px 40px rgba(0,0,0,0.2);
+    
+}
