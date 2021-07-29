@@ -56,4 +56,7 @@ router.get('/enquiry', (req, res) => {
 router.get('/training/winterTraining', (req, res) => {
     res.render(path.join(__dirname,'../templates/views/Training/winter'))
 })
+router.get('/training/summerTraining', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Training/summer'))
+})
 module.exports = router
