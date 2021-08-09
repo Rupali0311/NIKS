@@ -59,4 +59,49 @@ router.get('/training/winterTraining', (req, res) => {
 router.get('/training/summerTraining', (req, res) => {
     res.render(path.join(__dirname,'../templates/views/Training/summer'))
 })
+
+router.get('/workshop/school/informationSecurity', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Workshop/informationSecurity'))
+})
+
+router.get('/workshop/school/webDevelopment', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Workshop/web_development'))
+})
+router.get('/workshop/school/softwareDevelopment', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Workshop/software_dev'))
+})
+router.get('/workshop/school/androidDevelopment', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Workshop/android_development'))
+})
+router.get('/workshop/school/robotics', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Workshop/robotics'))
+})
+router.get('/workshop/school/embeddedSystems', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Workshop/embedded'))
+})
+
+
+
+router.get('/workshop/college/informationSecurity', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/collegeWorkshop/informationSecurity'))
+})
+
+router.get('/workshop/college/webDevelopment', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/collegeWorkshop/web_development'))
+})
+router.get('/workshop/college/softwareDevelopment', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/collegeWorkshop/software_dev'))
+})
+router.get('/workshop/college/androidDevelopment', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/collegeWorkshop/android_development'))
+})
+router.get('/workshop/college/robotics', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/collegeWorkshop/robotics'))
+})
+router.get('/workshop/college/embeddedSystems', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/collegeWorkshop/embedded'))
+})
+
+
+
 module.exports = router
