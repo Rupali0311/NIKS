@@ -22,6 +22,10 @@ router.get('/services/appDevelopment', (req, res) => {
     res.render(path.join(__dirname,'../templates/views/Services/appDevelopment'))
 })
 
+router.get('/services/digitalMarketing', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Services/digitalMarketing'))
+})
+
 router.get('/products/schoolManagementSystem', (req, res) => {
     res.render(path.join(__dirname,'../templates/views/Products/school'))
 })
@@ -32,6 +36,10 @@ router.get('/career', (req, res) => {
 
 router.get('/products/hospitalManagementSystem', (req, res) => {
     res.render(path.join(__dirname,'../templates/views/Products/hospital'))
+})
+
+router.get('/products/digitalMarketing', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Products/digitalMarketing'))
 })
 
 router.get('/products/tourManagementSystem', (req, res) => {
@@ -46,6 +54,23 @@ router.get('/products/realEstateManagementSystem', (req, res) => {
     res.render(path.join(__dirname,'../templates/views/Products/realEstate'))
 })
 
+router.get('/products/hotelManagementSystem', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Products/hotel'))
+})
+
+router.get('/products/onlineExams', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Products/online'))
+})
+
+router.get('/products/otherProducts', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Products/otherProducts'))
+})
+
+
+router.get('/products/retailPOS', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Products/retail'))
+})
+
 router.get('/enroll', (req, res) => {
     res.render(path.join(__dirname,'../templates/views/enrol'))
 })
@@ -58,6 +83,18 @@ router.get('/training/winterTraining', (req, res) => {
 })
 router.get('/training/summerTraining', (req, res) => {
     res.render(path.join(__dirname,'../templates/views/Training/summer'))
+})
+
+router.get('/training/jobGuaranteeTraining', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Training/jobGuarantee'))
+})
+
+router.get('/training/industrialTraining', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Training/industrial'))
+})
+
+router.get('/training/jobOrientedTraining', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Training/job'))
 })
 
 router.get('/workshop/school/informationSecurity', (req, res) => {

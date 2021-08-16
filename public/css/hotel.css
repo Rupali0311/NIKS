@@ -15,7 +15,7 @@
 }
 
 .wrap{
-    background-image: url('/img/real.jpg');
+    background-image: url('/img/hotel.jpg');
     background-blend-mode:darken;
     background-size: cover;
     height:100vh;
@@ -69,26 +69,17 @@ font-size:1.5em;
     
 }
 
-.cards h4{
-    font-size:1.6em;
+.left p{
+    font-size:1.2em;
     color:#fd746c;
-    text-align:center;
 }
-
 
 .text{
     position: relative;
     margin-left:20px;
-    font-size:1.2em;
-    margin-bottom:30px;
 }
 
-.cards hr{
-    margin-top:20px;
-    margin-bottom:20px;
-}
-
-@media(max-width:890px){
+@media(max-width:650px){
     .info h3{
         font-size:2em;
         text-align:center;
@@ -105,7 +96,7 @@ font-size:1.5em;
     }
 }
 
-@media(max-width:500px){
+@media(max-width:450px){
     .info h3{
         font-size:1.7em;
         text-align:center;
@@ -120,24 +111,11 @@ font-size:1.5em;
         margin-left:50px;
         margin-right:50px;
     }
-    .cards h4{
-        font-size:1.4em;
-        color:#fd746c;
-        text-align:center;
-    }
-    
-    
-    .text{
-        position: relative;
-        margin-left:20px;
-        font-size:1em;
-        margin-bottom:30px;
-    }
 }
 
-@media(max-width:400px){
+@media(max-width:340px){
     .info h3{
-        font-size:1.4em;
+        font-size:1.5em;
         text-align:center;
     }
     .info p{
@@ -146,22 +124,12 @@ font-size:1.5em;
     }
     .info{
         position:absolute;
-        top:80px;
-        margin-left:20px;
-        margin-right:20px;
+        top:100px;
+        margin-left:30px;
+        margin-right:30px;
     }
-   
-    .cards h4{
-        font-size:1.3em;
-        color:#fd746c;
-        text-align:center;
-    }
-    
-    
     .text{
         position: relative;
         margin-left:10px;
-        font-size:0.9em;
-        margin-bottom:30px;
     }
 }

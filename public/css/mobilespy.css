@@ -18,6 +18,7 @@ section{
     background-position: center;
     background-attachment: fixed;
     padding:50px;
+    overflow:hidden;
    
 }
 
@@ -184,5 +185,11 @@ header{
     .imgBox img{
         max-width:300px;
 
+    }
+}
+
+@media(max-width:320px){
+    header .heading{
+        font-size:1.2em;
     }
 }
