@@ -75,6 +75,10 @@ router.get('/enroll', (req, res) => {
     res.render(path.join(__dirname,'../templates/views/enrol'))
 })
 
+router.get('/franchise', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/franchise'))
+})
+
 router.get('/enquiry', (req, res) => {
     res.render(path.join(__dirname,'../templates/views/enquiry'))
 })
@@ -116,6 +120,21 @@ router.get('/workshop/school/robotics', (req, res) => {
 router.get('/workshop/school/embeddedSystems', (req, res) => {
     res.render(path.join(__dirname,'../templates/views/Workshop/embedded'))
 })
+
+router.get('/investors/codeAndPolicies', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Investors/codeAndPolicies'))
+})
+
+router.get('/investors/corporateGovernance', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Investors/corporateGovernance'))
+})
+router.get('/investors/financialRelations', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Investors/financialRelations'))
+})
+router.get('/investors/initialPublicOffering', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/Investors/initialPublicOffering'))
+})
+
 
 
 
