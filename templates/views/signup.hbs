@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/css/register.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NIKS-User SignUp</title>
+    <title>NIKS - User SignUp</title>
 </head>
-<body  class="bg-secondary"style="height:100vh;z-index:-1;">
+<body  class="bg-secondary">
     
-    <div class="container " style="height:100vh;">
-    <div class="bg-image p-5 " style="background-image:url('/img/Sign-up.jpeg');background-size:cover;height:100vh;overflow:visible;">
+    <div class="container-fluid">
+    <div class="bg-image outer">
     
         
-        <h2 class="animate__animated animate__bounceInRight text-sm-center fixed-top text-secondary my-5 pb-5 " >Sign Up</h2>
-       <div class="animate__animated animate__bounceInRight row  mh-80 w-100 rounded my-5 p-5 pb-5 border border-right border-dark" >
-        <div class="col-sm-8 col-sm-offset-2">
+        <h2 class="animate__animated animate__bounceInRight text-sm-center  text-secondary  " >Sign Up</h2>
+       <div class="box animate__animated animate__bounceInRight row  rounded  border border-right border-dark" >
+        <div class="col-md-6 col-sm-offset-2">
     <form method="post" action="/signup">
         
         <div class="form-group">
-        <input class="my-3  text-sm-center form-control w-75" name="name" type='text' placeholder='Name' required/>
+        <input class="my-3  text-sm-center form-control " name="name" type='text' placeholder='Name' required/>
         </div>
         <div class="form-group">
-        <input class="mb-3 text-sm-center form-control w-75" name="email" type='email' placeholder='Email' required/>
+        <input class="mb-3 text-sm-center form-control " name="email" type='email' placeholder='Email' required/>
         </div>
         <div class="form-group">
-        <input class="mb-3 text-sm-center form-control w-75" name="phone" type='text' placeholder='Contact Number' required/>
+        <input class="mb-3 text-sm-center form-control " name="phone" type='text' placeholder='Contact Number' required/>
         </div>
-        {{!-- <div class="form-group">
-        <input class="mb-3 text-sm-center form-control w-75" name="courses" type='text' placeholder='Courses' required/>
-        </div> --}}
-        
-            <div class="form-group">
+        <div class="form-group">
               
-        <input class="mb-3 text-sm-center form-control w-75" name="password" type='password' placeholder='Password' required/>
+        <input class="mb-3 text-sm-center form-control " name="password" type='password' placeholder='Password' required/>
         </div>
         
         <div class="form-group">
-        <input class="mb-3 text-sm-center form-control w-75" name="confirmPassword" type='password' placeholder='Confirm Password' required/>
+        <input class="mb-3 text-sm-center form-control" name="confirmPassword" type='password' placeholder='Confirm Password' required/>
         </div>
-        <button class="btn btn-info btn-block mb-3 w-75" type='submit'>Sign Up</button>
+        <button class="btn btn-info btn-block " type='submit'>Sign Up</button>
        
         
     </form>
     </div>
-    <div class="col-sm-4 col-sm-offset-2 py-5 my-5 mx-auto"><p class=" text-light">Already have an account?</p><a href="/login" class="btn btn-info" >Login Here</a></div>
+    <div class="col-md-6 col-sm-offset-2 "><div class="text"><p class=" text-light">Already have an account?</p><a href="/login" class="btn btn-info" >Login Here</a></div></div>
     
      </div>
      

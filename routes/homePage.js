@@ -10,6 +10,14 @@ router.get('/services/cyberSecurity', (req, res) => {
     res.render(path.join(__dirname,'../templates/views/Services/cyberSecurity'))
 })
 
+router.get('/aboutUs', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/about'))
+})
+
+router.get('/contactUs', (req, res) => {
+    res.render(path.join(__dirname,'../templates/views/contact'))
+})
+
 router.get('/services/webDevelopment', (req, res) => {
     res.render(path.join(__dirname,'../templates/views/Services/webDevelopment'))
 })
